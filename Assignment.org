@@ -1,0 +1,40 @@
+* *Mobile App Development Assignment*
+*Assignment: Create a Simple React Native APK with 3 Tabs: Home, Profile, and Settings*
+
+** *Objective:*
+The goal of this assignment is to create a simple React Native mobile
+application that contains three tabs: *Home*, *Profile*, and *Settings*.
+The candidate will create the app, implement basic navigation, and
+prepare an APK file to be submitted.
+
+** *Requirements:*
+1. *Tabs to be created:*
+   - *Home Tab:* Displays a welcome message or any basic content.
+   - *Profile Tab:* Displays placeholder content for a user profile
+     (e.g., Name, Avatar, or Bio).
+   - *Settings Tab:* Displays basic settings like toggle switches or a
+     list of configurable options.
+
+2. *Navigation:*
+   - Use *React Navigation* to create the bottom tab navigation with
+     three tabs.
+
+3. *Customization:*
+   - Customize the content of each tab to reflect simple, meaningful
+     data (e.g., user name and profile info for the Profile tab).
+   - Each tab should have a clean and simple design.
+
+4. *APK Creation:*
+   - The app should be tested, and after successful testing, the APK
+     file should be built for Android devices.
+
+5. *Deliverables:*
+   - *APK File*: The candidate should provide the APK file that can be
+     installed on Android devices.
+   - *Source Code*: A GitHub repository or ZIP file containing the full
+     source code for the project.
+   - *README File*: A README.md file detailing the following:
+     - Instructions on how to run the app locally.
+     - Any dependencies or libraries used (e.g., React Navigation).
+     - How to build the APK.
+     - Any additional notes or improvements made in the app.
