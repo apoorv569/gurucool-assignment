@@ -4,7 +4,7 @@ import { Tabs } from "expo-router";
 import { useContext } from "react";
 
 export default function App() {
-    const { isDarkMode, showStatusBar } = useContext(settingsContext);
+    const { isDarkMode, fullscreen } = useContext(settingsContext);
 
     return (
         <Tabs
@@ -13,9 +13,10 @@ export default function App() {
                 headerStyle: { backgroundColor: isDarkMode ? "#5A3E72" : "plum" },
                 headerTintColor: isDarkMode ? "#EAE0F0" : "#333",
                 headerTitleAlign: "center",
-                headerShown: showStatusBar,
-                tabBarStyle: { backgroundColor: isDarkMode ? "#5A3E72" : "plum" },
+                headerShown: !fullscreen,
+                tabBarStyle: { height: 50, paddingBottom: 10, backgroundColor: isDarkMode ? "#5A3E72" : "plum" },
                 tabBarLabelPosition: "below-icon",
+                tabBarLabelStyle: { fontSize: 12, fontWeight: "bold" },
                 tabBarShowLabel: true,
                 tabBarActiveTintColor: isDarkMode ? "#E6C2F0" : "#4B0082",
                 tabBarInactiveTintColor: isDarkMode ? "#A378B6" : "#86608E",
@@ -26,7 +27,7 @@ export default function App() {
                 options={{
                     title: "Home",
                     tabBarLabel: "Home",
-                    tabBarIcon: ({ color }) => <MaterialIcons name="home" size={24} color={color} />
+                    tabBarIcon: ({ color }) => <MaterialIcons name="home" size={28} color={color} />
                 }}
             />
             <Tabs.Screen
@@ -34,7 +35,7 @@ export default function App() {
                 options={{
                     title: "Profile",
                     tabBarLabel: "Profile",
-                    tabBarIcon: ({ color }) => <MaterialIcons name="person" size={24} color={color} />
+                    tabBarIcon: ({ color }) => <MaterialIcons name="person" size={28} color={color} />
                 }}
             />
             <Tabs.Screen
@@ -42,7 +43,7 @@ export default function App() {
                 options={{
                     title: "Settings",
                     tabBarLabel: "Settings",
-                    tabBarIcon: ({ color }) => <MaterialIcons name="settings" size={24} color={color} />
+                    tabBarIcon: ({ color }) => <MaterialIcons name="settings" size={28} color={color} />
                 }}
             />
         </Tabs >
